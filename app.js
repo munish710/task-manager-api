@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   res.send("Hola Amigos");
 });
 
-app.use("/api/v1/", tasksRoutes);
+app.use("/api/v1/tasks", tasksRoutes);
 
 const port = 5000;
 
