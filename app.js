@@ -19,7 +19,7 @@ app.use(notFound);
 
 app.use(errorHandler);
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const start = async () => {
   try {
